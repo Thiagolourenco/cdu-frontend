@@ -5,13 +5,16 @@ import {Form} from './style'
 
 import logo from '../../assests/image.png'
 
-function Login(){
+function Login({history}){
+    function handleHome(){
+        history.push('/home')
+    }
+
     return (
-    <Form>
+    <Form onSubmit={handleHome}>
         <img src={logo} alt="Logo"/>
         <div>
             <label>
-                <FaUserAlt color="#000" size={16}/>
                 <input placeholder="Seu E-mail" type="email"/>
             </label>
             <label>

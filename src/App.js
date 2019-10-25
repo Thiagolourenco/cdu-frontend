@@ -1,13 +1,13 @@
 import React from 'react'
 
-import Login from './pages/login'
+import Routes from './routes'
 import Global from './style/global'
 
 function App(){
   return (
     <>
       <Global />
-      <Login />
+      <Routes />
     </>
   )
 }
