@@ -1,16 +1,16 @@
-import React from 'react'
+import React from "react";
 
-import Header from '../../components/header'
+import Header from "../../components/header";
 
-function Home(){
-    return (
-        <div style={{margin: 0, padding: 0}}>
-            <Header />
-            <h1>Ola</h1>
-        </div>
-        
-    )
-    
+import { Container } from "./style";
+
+function Home() {
+  return (
+    <Container>
+      <Header />
+      <h1>Hello</h1>
+    </Container>
+  );
 }
 
-export default Home
+export default Home;

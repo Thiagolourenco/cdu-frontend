@@ -1,12 +1,12 @@
-import {createGlobalStyle} from 'styled-components'
+import { createGlobalStyle } from "styled-components";
 
-export default createGlobalStyle `
+export default createGlobalStyle`
   body {
       margin: 0;
       padding: 0;
       outline: 0;
       box-sizing: border-box;
-    }   
+    }
 
 
     html,
@@ -23,6 +23,9 @@ export default createGlobalStyle `
   input,
   button {
     font-family: Arial, Helvetica, sans-serif;
-  }`
+  }
 
-;
+  button {
+    cursor: pointer;
+  }
+  `;
