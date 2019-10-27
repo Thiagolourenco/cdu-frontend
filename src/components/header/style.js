@@ -1,9 +1,8 @@
 import styled from "styled-components";
 
 export const Container = styled.header`
-  background-color: rgba(255, 255, 255, 0.94);
+  background-color: rgba(255, 255, 255, 0.8);
   display: flex;
-  flex: 1;
   height: 80px;
   margin: 0;
   align-items: center;
@@ -32,6 +31,7 @@ export const Container = styled.header`
 
     button {
       border: 0;
+      background: transparent;
     }
   }
 `;
