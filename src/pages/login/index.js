@@ -3,7 +3,7 @@ import { FaUserAlt, FaLock } from "react-icons/fa";
 
 import { Form } from "./style";
 
-import logo from "../../assests/image.png";
+import logo from "../../assets/image.png";
 
 function Login({ history }) {
   function handleHome() {

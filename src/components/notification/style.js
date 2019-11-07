@@ -1,6 +1,6 @@
-import styled, { css } from 'styled-components';
-import PerfectScrollBar from 'react-perfect-scrollbar';
-import { lighten } from 'polished';
+import styled, { css } from "styled-components";
+import PerfectScrollBar from "react-perfect-scrollbar";
+import { lighten } from "polished";
 
 export const Container = styled.div`
   position: relative;
@@ -21,12 +21,11 @@ export const Badge = styled.button`
         width: 8px;
         height: 8px;
         background: #ff892e;
-        content: '';
+        content: "";
         border-radius: 50%;
       }
     `}
 `;
-
 
 export const NotificationList = styled.div`
   position: absolute;
@@ -36,9 +35,10 @@ export const NotificationList = styled.div`
   border-radius: 4px;
   background: rgba(0, 0, 0, 0.6);
   padding: 15px 5px;
+  display: ${props => (props.visible ? "block" : "none")};
 
   &::before {
-    content: '';
+    content: "";
     position: absolute;
     left: calc(50% - 20px);
     top: -20px;
@@ -59,31 +59,30 @@ export const Notification = styled.div`
     border-top: 1px solid rgba(255, 255, 255, 0.1);
   }
 
-  p{
+  p {
     font-size: 13px;
     line-height: 18px;
   }
 
-  time {
+  strong {
     font-size: 12px;
-    opacity: 0.6;
+    opacity: 0.7;
   }
 
   button {
     font-size: 12px;
     border: 0;
     background: none;
-    color: ${lighten(0.2, '#7159c1')};
+    color: ${lighten(0.2, "#7159c1")};
     padding: 0 5px;
     margin: 0 5px;
-    border-left: 1px solid rgba(255, 255, 255, 0.1);
   }
 
   ${props =>
     props.unread &&
     css`
       &::after {
-        content: '';
+        content: "";
         display: inline-block;
         width: 8px;
         height: 8px;

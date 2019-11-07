@@ -1,10 +1,9 @@
 import React from "react";
-import { FaUserAlt } from "react-icons/fa";
-import {Link} from 'react-router-dom'
+import { Link } from "react-router-dom";
 
-import Notification from '../notification'
+import Notification from "../notification";
 
-import logo from "../../assests/image.png";
+import logo from "../../assets/image.png";
 
 import { Container, Content, Profile } from "./style";
 
@@ -14,9 +13,8 @@ function Header() {
       <Content>
         <nav>
           <img src={logo} alt="Logo" />
-          <p>CDU - Caminho do Universitário</p>
+          <Link to="/home">CDU - Caminho do Universitário</Link>
         </nav>
-
 
         <aside>
           <Notification />
