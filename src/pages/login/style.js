@@ -19,7 +19,7 @@ export const Form = styled.form`
       flex-direction: row;
       background: rgba(196, 196, 196, 0.41);
       width: 425px;
-      border-radius: 15px;
+      border-radius: 10px;
       padding: 15px;
       margin: 10px;
 
@@ -40,7 +40,7 @@ export const Form = styled.form`
     padding: 15px;
     background: rgba(53, 79, 171, 0.94);
     margin-top: 20px;
-    border-radius: 15px;
+    border-radius: 10px;
     border: 0;
     color: #fff;
     font-size: 18px;

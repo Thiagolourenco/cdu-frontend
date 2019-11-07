@@ -2,36 +2,70 @@ import styled from "styled-components";
 
 export const Container = styled.header`
   background-color: rgba(255, 255, 255, 0.8);
-  display: flex;
-  height: 80px;
-  margin: 0;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
+  height: 64px;
+  padding: 0 30px;
 
-  > div {
+`;
+
+export const Content = styled.div`
+  height: 64px;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  nav {
     display: flex;
-    flex-direction: row;
-    margin-left: 30px;
-    img {
-      height: 59px;
-      width: 58px;
+    align-items: center;
+
+    > img {
+      width: 49px;
+      width: 49px;
     }
 
-    p {
-      font-size: 18;
+    img {
+      margin-right: 20px;
+      padding-right: 20px;
+      border-right: 1px solid #eee;
+    }
+
+    a {
       font-weight: bold;
-      margin-left: 10px;
-      color: rgba(0, 0, 0, 0.7);
+      color: rgba(0,0,0,0.6);
     }
   }
 
-  div {
-    margin-right: 30px;
+  aside {
+    display: flex;
+    align-items: center;
+  }
+`;
 
-    button {
-      border: 0;
-      background: transparent;
+export const Profile = styled.div`
+ display: flex;
+  margin-left: 20px;
+  padding-left: 20px;
+  border-left: 1px solid #eee;
+
+  div {
+    text-align: right;
+    margin-right: 10px;
+
+    strong {
+      display: block;
+      color: #333;
     }
+
+    a {
+      display: block;
+      margin-top: 2px;
+      font-size: 12px;
+      color: #999;
+    }
+  }
+  img {
+    height: 32px;
+    border-radius: 50%;
   }
 `;

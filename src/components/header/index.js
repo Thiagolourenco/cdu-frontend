@@ -1,24 +1,37 @@
 import React from "react";
 import { FaUserAlt } from "react-icons/fa";
+import {Link} from 'react-router-dom'
+
+import Notification from '../notification'
 
 import logo from "../../assests/image.png";
 
-import { Container } from "./style";
+import { Container, Content, Profile } from "./style";
 
 function Header() {
   return (
     <Container>
-      <div>
-        <img src={logo} alt="Logo" />
-        <p>CDU - Caminho do Universitário</p>
-      </div>
+      <Content>
+        <nav>
+          <img src={logo} alt="Logo" />
+          <p>CDU - Caminho do Universitário</p>
+        </nav>
 
-      <div>
-        <p>Administrador</p>
-        <button>
-          <FaUserAlt size={20} color="#000" />
-        </button>
-      </div>
+
+        <aside>
+          <Notification />
+          <Profile>
+            <div>
+              <strong>Administrador</strong>
+              <Link to="/">Perfil</Link>
+            </div>
+            <img
+              src="https://api.adorable.io/avatars/40/abott@adorable.png"
+              alt="Perfil"
+            />
+          </Profile>
+        </aside>
+      </Content>
     </Container>
   );
 }

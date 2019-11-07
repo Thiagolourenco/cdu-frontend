@@ -15,7 +15,7 @@ export const Content = styled.ul`
   margin-top: 40px;
   align-self: center;
   justify-content: space-between;
-  border-radius: 20px;
+  border-radius: 5px;
   flex-direction: row;
   padding-left: 10px;
 
